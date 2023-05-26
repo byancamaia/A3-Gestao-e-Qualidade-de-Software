@@ -100,7 +100,18 @@ namespace c.Controllers
             return new ObjectResult(caminhaodb) { StatusCode = StatusCodes.Status200OK };
         }
 
-
+        /// Deleta o que corresponde ao Id
+        /// </summary>
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            if (id == 0)
+            {
+                throw new Exception($"Id não pode ser zero ou nulo.");
+            }
+            await _caminhaoRepository.Deletar(id);
+            return Ok();
+        }
 
     }
 }
