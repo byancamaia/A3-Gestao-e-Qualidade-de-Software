@@ -5,7 +5,7 @@ using System;
 using APICaminhoesCrude.Context;
 using Microsoft.AspNetCore.Http;
 
-namespace c.Controllers
+namespace APICaminhoesCrude.Controllers
 {
     [ApiController]
     [Route("api/Caminhao")]
