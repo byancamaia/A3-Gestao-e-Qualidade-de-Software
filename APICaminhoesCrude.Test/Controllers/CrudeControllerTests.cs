@@ -180,5 +180,20 @@ namespace APICaminhoesCrude.Test.Controllers
             await _caminhaoController.Delete(0));
         }
         #endregion
+
+        #region Update
+        [Fact]
+        public async Task Atualizar_IdZeroNulo()
+        {
+            await Assert.ThrowsAsync<Exception>(async () =>
+            await _caminhaoController.Atualizar(0, new Caminhao
+            {
+                Id = 0,
+                AnoFabricacao = 2022,
+                AnoModelo = 2023,
+                NomeModelo = MarcaModelo.Scania
+            }));
+        }
+        #endregion
     }
 }
