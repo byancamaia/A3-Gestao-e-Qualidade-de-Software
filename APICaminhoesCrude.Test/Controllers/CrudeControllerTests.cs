@@ -171,5 +171,14 @@ namespace APICaminhoesCrude.Test.Controllers
         }
 
         #endregion
+
+        #region Delete
+        [Fact]
+        public async Task Delete_IdZeroNulo()
+        {
+            await Assert.ThrowsAsync<Exception>(async () =>
+            await _caminhaoController.Delete(0));
+        }
+        #endregion
     }
 }
