@@ -58,9 +58,9 @@ namespace APICaminhoesCrude
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "APITruck",
+                    Title = "APICaminhoesCrude",
                     Version = "v1",
-                    Description = " **Para funcionamento da API, altere a string de conexão válida em (appsettings.json), propriedade (ConnectionStrings), em seguida abra o console do gerenciador de pacotes e digite (Update-Database)** ",
+                    Description = " **A3 - Gestão e Qualidade de Software ** ",
                 });
 
                 //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
