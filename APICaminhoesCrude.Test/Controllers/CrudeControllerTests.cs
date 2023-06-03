@@ -104,5 +104,72 @@ namespace APICaminhoesCrude.Test.Controllers
         }
 
         #endregion
+
+        #region Insert
+
+        [Fact]
+        public async Task Insert_CaminhaoValidoAsync()
+        {
+            var resp = await _caminhaoController.Insert(new Caminhao
+            {
+                Id = 0,
+                AnoFabricacao = 2023,
+                AnoModelo = 2023,
+                NomeModelo = MarcaModelo.Scania
+            });
+
+            //Assert
+            var result = resp as ObjectResult;
+
+            if (result.StatusCode == 201)
+            {
+                Assert.True(true);
+            }
+            else
+            {
+                Assert.True(false);
+            }
+        }
+
+        [Fact]
+        public async Task Insert_AnoModeloInvalido()
+        {
+            await Assert.ThrowsAsync<Exception>(async () =>
+            await _caminhaoController.Insert(new Caminhao
+            {
+                Id = 0,
+                AnoFabricacao = 2022,
+                AnoModelo = 2024,
+                NomeModelo = MarcaModelo.Scania
+            }));
+        }
+
+        [Fact]
+        public async Task Insert_AnoFabricacaoInvalido()
+        {
+            await Assert.ThrowsAsync<Exception>(async () =>
+            await _caminhaoController.Insert(new Caminhao
+            {
+                Id = 0,
+                AnoFabricacao = 1997,
+                AnoModelo = 1998,
+                NomeModelo = MarcaModelo.Mercedes
+            }));
+        }
+
+        [Fact]
+        public async Task Insert_AnoFabricacaoNulo()
+        {
+            await Assert.ThrowsAsync<Exception>(async () =>
+            await _caminhaoController.Insert(new Caminhao
+            {
+                Id = 0,
+                AnoFabricacao = 0,
+                AnoModelo = 0,
+                NomeModelo = MarcaModelo.Scania
+            }));
+        }
+
+        #endregion
     }
 }

@@ -78,6 +78,8 @@ namespace APICaminhoesCrude.Controllers
             return new ObjectResult(caminhaodb) { StatusCode = StatusCodes.Status201Created };
         }
 
+
+
         /// <summary>
         /// Atualiza o Caminhão através do Id
         /// </summary>        
