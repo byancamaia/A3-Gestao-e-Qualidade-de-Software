@@ -8,6 +8,7 @@
 - Byanca Maia - 125111378078
 - Isaias Gabriel Vasco Gomes - 125111361971
 - Matheus de Freitas Tonietti - 125111351391
+- Pamela Cristofoletti - 125111355575
 - Victor Aiexe Barreto do Valle - 125112362886
 
 
