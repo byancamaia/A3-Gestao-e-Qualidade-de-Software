@@ -11,17 +11,3 @@
 - Pamela Cristofoletti - 125111355575
 - Victor Aiexe Barreto do Valle - 125112362886
 
-
-## ✔️ Como rodar o projeto?
-
-
-## ✔️ Técnicas e tecnologias utilizadas
-
-
-
-## ✔️ Setup
-
-
-
-# Documentação das Rotas
-
