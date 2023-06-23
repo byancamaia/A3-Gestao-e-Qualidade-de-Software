@@ -2,6 +2,8 @@
 
 
 ![Badge em Desenvolvimento](https://img.shields.io/static/v1?label=STATUS&message=EM%20ANDAMENTO&color=GREEN&style=for-the-badge)
+
+
 ⚠️ O projeto está na Branch Master ⚠️
 
 
@@ -11,18 +13,4 @@
 - Matheus de Freitas Tonietti - 125111351391
 - Pamela Cristofoletti - 125111355575
 - Victor Aiexe Barreto do Valle - 125112362886
-
-
-## ✔️ Como rodar o projeto?
-
-
-## ✔️ Técnicas e tecnologias utilizadas
-
-
-
-## ✔️ Setup
-
-
-
-# Documentação das Rotas
 
